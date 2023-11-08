@@ -4,13 +4,8 @@ import { useDashboardContext } from '../../../hooks/useDashboardContext';
 import { useModalContext } from '../../../hooks/useModalContext';
 
 export function BattlePreview() {
-  const {
-    battle,
-    isLoadingHeroes,
-    heroesToBattle,
-    championHero,
-    resetChampions,
-  } = useDashboardContext();
+  const { battle, isLoadingHeroes, heroesToBattle, resetChampions } =
+    useDashboardContext();
 
   const { setIsBattlePreviewModalOpen } = useModalContext();
 
